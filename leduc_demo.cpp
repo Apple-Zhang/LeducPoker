@@ -15,6 +15,8 @@ int main(int argc, char *argv[]) {
         load_cfr_strategy("defense.trained");
         strategy_name[0] = "CFR";
         strategy_name[1] = "Greedy";
+        strategy[0] = cfr;
+        strategy[1] = greedy_choice;
     }
     else if (argc == 3) {
         const char *pl[2] = {argv[1], argv[2]};
